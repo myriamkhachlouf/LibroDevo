@@ -2,6 +2,7 @@
 #define GESTION_LIVRE_H
 #include "livre.h"
 #include <QDialog>
+#include "intermediaire.h"
 
 namespace Ui {
 class gestion_livre;
@@ -32,6 +33,12 @@ private slots:
     void on_mail_pushButton_clicked();
 
     void on_checkBox_stateChanged(int arg1);
+
+    void on_pushButton_clicked();
+
+    void on_fermer_clicked();
+
+    void on_fermer_2_clicked();
 
 private:
     Ui::gestion_livre *ui;

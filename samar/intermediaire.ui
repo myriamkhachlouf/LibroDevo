@@ -13,66 +13,75 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="livre_pushbutton">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>280</x>
      <y>70</y>
-     <width>81</width>
-     <height>31</height>
+     <width>83</width>
+     <height>85</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Arial Narrow</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>gestion livre</string>
-   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="livre_pushbutton">
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>gestion livre</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="rayon_pushbutton">
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>gestion rayon</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="capteur_pushButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>capteur</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
-  <widget class="QPushButton" name="rayon_pushbutton">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>130</y>
-     <width>81</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Narrow</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>gestion rayon</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_pic">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>500</width>
-     <height>300</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <zorder>label_pic</zorder>
-  <zorder>livre_pushbutton</zorder>
-  <zorder>rayon_pushbutton</zorder>
  </widget>
  <resources/>
  <connections/>

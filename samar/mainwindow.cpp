@@ -3,6 +3,7 @@
 #include "gestion_livre.h"
 #include "intermediaire.h"
 #include<QPixmap>
+#include<QDateTime>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -11,6 +12,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     QPixmap pix("C:/Users/kamel/Desktop/lib.jpg");
     ui->label_pic->setPixmap(pix);
+    monTimer= new QTimer(this);
+    connect(monTimer,SIGNAL(timeout()),this,SLOT(mytimer()));
+    monTimer ->start(1000);
+
 }
 
 MainWindow::~MainWindow()
@@ -18,9 +23,16 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::mytimer()
+{
+  QTime time= QTime::currentTime();
+  QString time_text=time.toString("hh:mm:ss");
+  ui->label_time->setText(time_text);
+}
+
 
 void MainWindow::on_pushButton_clicked()
-{
+{ QSound::play("C:/Users/kamel/Downloads/Mouse.wav");
     QString username= ui->lineEdit->text();
     QString password=ui->lineEdit_2->text();
     if (username == "samar" && password == "123456")

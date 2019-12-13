@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>652</width>
-    <height>476</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -151,14 +151,27 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
     <widget class="QPushButton" name="ajouter_pushButton">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>280</y>
+       <x>120</x>
+       <y>240</y>
        <width>75</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fermer">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>270</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>fermer</string>
      </property>
     </widget>
    </widget>
@@ -200,6 +213,19 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
       <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fermer_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>300</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>fermer</string>
      </property>
     </widget>
    </widget>
@@ -384,14 +410,27 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
     <widget class="QPushButton" name="mail_pushButton">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>250</y>
+       <x>430</x>
+       <y>390</y>
        <width>75</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>mailing</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>280</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>fermer</string>
      </property>
     </widget>
    </widget>

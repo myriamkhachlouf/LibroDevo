@@ -1,5 +1,7 @@
 QT       += core gui
 QT+=sql network
+QT+=serialport
+QT += multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,6 +19,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    arduino.cpp \
+    capteur.cpp \
     connection.cpp \
     gestion_livre.cpp \
     gestion_rayon.cpp \
@@ -29,6 +33,8 @@ SOURCES += \
     smtp.cpp
 
 HEADERS += \
+    arduino.h \
+    capteur.h \
     connection.h \
     gestion_livre.h \
     gestion_rayon.h \
@@ -40,6 +46,7 @@ HEADERS += \
     smtp.h
 
 FORMS += \
+    capteur.ui \
     gestion_livre.ui \
     gestion_rayon.ui \
     intermediaire.ui \

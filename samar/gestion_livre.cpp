@@ -134,3 +134,28 @@ void gestion_livre::on_checkBox_stateChanged(int arg1)
 
 
 }
+
+
+void gestion_livre::on_fermer_clicked()
+{
+intermediaire *i;
+hide();
+i=new intermediaire(this);
+i->show();
+}
+
+void gestion_livre::on_fermer_2_clicked()
+{
+    intermediaire *i;
+    hide();
+    i=new intermediaire(this);
+    i->show();
+}
+
+void gestion_livre::on_pushButton_clicked()
+{
+    intermediaire *i;
+    hide();
+    i=new intermediaire(this);
+    i->show();
+}

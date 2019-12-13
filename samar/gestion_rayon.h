@@ -28,6 +28,12 @@ private slots:
 
     void on_supprimer_pushButton_clicked();
 
+    void on_fermer_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::gestion_rayon *ui;
     rayon tmprayon;

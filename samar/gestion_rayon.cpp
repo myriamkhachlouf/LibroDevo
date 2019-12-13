@@ -3,6 +3,7 @@
 #include"rayon.h"
 #include<QMessageBox>
 #include<QComboBox>
+#include "intermediaire.h"
 
 gestion_rayon::gestion_rayon(QWidget *parent) :
     QDialog(parent),
@@ -95,3 +96,27 @@ void gestion_rayon::on_modifier_pushbutton_clicked()
 }
 
 
+
+void gestion_rayon::on_fermer_clicked()
+{
+    intermediaire *i;
+    hide();
+    i=new intermediaire(this);
+    i->show();
+}
+
+void gestion_rayon::on_pushButton_clicked()
+{
+    intermediaire *i;
+    hide();
+    i=new intermediaire(this);
+    i->show();
+}
+
+void gestion_rayon::on_pushButton_2_clicked()
+{
+    intermediaire *i;
+    hide();
+    i=new intermediaire(this);
+    i->show();
+}
