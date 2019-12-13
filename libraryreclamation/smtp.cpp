@@ -32,29 +32,6 @@ Smtp::Smtp( const QString &user, const QString &pass, const QString &host, quint
 
 }
 
-void Smtp::sendMail(const QString &from, const QString &to, const QString &subject, const QString &body)
-{
-    message = "To: " + to + "\n";
-    message.append("From: " + from + "\n");
-    message.append("Subject: " + subject + "\n");
-    message.append(body);
-    message.replace( QString::fromLatin1( "\n" ), QString::fromLatin1( "\r\n" ) );
-    message.replace( QString::fromLatin1( "\r\n.\r\n" ),
-    QString::fromLatin1( "\r\n..\r\n" ) );
-    this->from = from;
-    rcpt = to;
-    state = Init;
-    socket->connectToHostEncrypted(host, port); //"smtp.gmail.com" and 465 for gmail TLS
-    if (!socket->waitForConnected(timeout)) {
-         qDebug() << socket->errorString();
-     }
-
-    t = new QTextStream( socket );
-
-
-
-}
-
 Smtp::~Smtp()
 {
     delete t;
@@ -216,4 +193,27 @@ void Smtp::readyRead()
         emit status( tr( "Failed to send message" ) );
     }
     response = "";
+}
+bool Smtp::sendMail(const QString &from, const QString &to, const QString &subject, const QString &body)
+{
+    message = "To: " + to + "\n";
+    message.append("From: " + from + "\n");
+    message.append("Subject: " + subject + "\n");
+    message.append(body);
+    message.replace( QString::fromLatin1( "\n" ), QString::fromLatin1( "\r\n" ) );
+    message.replace( QString::fromLatin1( "\r\n.\r\n" ),
+    QString::fromLatin1( "\r\n..\r\n" ) );
+    this->from = from;
+    rcpt = to;
+    state = Init;
+    socket->connectToHostEncrypted(host, port); //"smtp.gmail.com" and 465 for gmail TLS
+    if (!socket->waitForConnected(timeout)) {
+         qDebug() << socket->errorString();
+         return false ;
+     }
+
+    t = new QTextStream( socket );
+    return true ;
+
+
 }

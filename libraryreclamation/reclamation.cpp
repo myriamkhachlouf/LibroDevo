@@ -14,7 +14,7 @@ reclamation::~reclamation()
 }
 
 void reclamation::on_pushButton_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     passerreclamation *precl;
     hide();
     precl= new passerreclamation();
@@ -22,12 +22,12 @@ void reclamation::on_pushButton_clicked()
 }
 
 void reclamation::on_pushButton_3_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     close();
 }
 
 void reclamation::on_pushButton_2_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     traiterreclamation *precl;
     hide();
     precl= new traiterreclamation();

@@ -8,6 +8,9 @@ public:
     notification();
         void notification_ajout_reclamation_client(QString);
         void notification_ajout_reclamation_employe(QString);
+        void notification_retard(QString);
+         void notification_ajout_LIVRE(QString);
+
 private:
 
     int num;

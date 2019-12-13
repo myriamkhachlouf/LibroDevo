@@ -5,6 +5,7 @@
 #include "ctraiterreclamation.h"
 #include "QMessageBox"
 #include "reclamation.h"
+#include<QSound>
 namespace Ui {
 class traiterreclamation;
 }
@@ -49,7 +50,7 @@ private:
     ctraiterreclamation tmprec1;
 private slots :
   void sendMail();
-  void mailSent(QString);
+
 
 };
 

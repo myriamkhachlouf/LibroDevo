@@ -5,6 +5,7 @@
 #include <QFontComboBox>
 #include "cpasserreclamation.h"
 #include "reclamation.h"
+#include<QSound>
 namespace Ui {
 class passerreclamation;
 }

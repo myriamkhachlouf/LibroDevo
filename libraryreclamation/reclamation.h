@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "ui_reclamation.h"
+#include<QSound>
 #include "passerreclamation.h"
 
 namespace Ui {

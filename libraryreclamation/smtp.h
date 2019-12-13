@@ -33,9 +33,9 @@ public:
           const QString &host, quint16 port = 587
             , int timeout = 30000 );
     ~Smtp();
-
-    void sendMail( const QString &from, const QString &to,
+    bool sendMail( const QString &from, const QString &to,
                    const QString &subject, const QString &body );
+
 
 signals:
     void status( const QString &);

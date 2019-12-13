@@ -13,9 +13,6 @@ traiterreclamation::traiterreclamation(QWidget *parent) :
     ui->comboBox_6->setModel(tmprec.combob1());
     ui->tabreclamation_2->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->comboBox_3->setModel(tmprec.combob1());
-    connect(ui->pushButton_5, SIGNAL(clicked()),this, SLOT(sendMail()));
-
-
 
 }
 
@@ -47,7 +44,7 @@ void traiterreclamation::on_comboBox_currentIndexChanged(const QString &arg1)
 }
 
 void traiterreclamation::on_pushButton_47_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->comboBox->setModel(tmprec.afficher2());
 
     ctraiterreclamation tmp;
@@ -109,7 +106,7 @@ void traiterreclamation::on_comboBox_6_currentIndexChanged(const QString &arg1)
 
 
 void traiterreclamation::on_pushButton_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->tabreclamation_2->setModel(tmprec.afficher());
 
 }
@@ -117,7 +114,7 @@ void traiterreclamation::on_pushButton_clicked()
 
 void traiterreclamation::on_pushButton_8_clicked()
 {
-
+QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     QString reponse =ui->lineEdit_35->text();
     int id = ui->comboBox_6->currentText().toInt();
 
@@ -147,7 +144,7 @@ else
 }
 
 void traiterreclamation::on_pushButton_3_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -155,7 +152,7 @@ void traiterreclamation::on_pushButton_3_clicked()
 }
 
 void traiterreclamation::on_pushButton_9_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -163,7 +160,7 @@ void traiterreclamation::on_pushButton_9_clicked()
 }
 
 void traiterreclamation::on_pushButton_2_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -171,7 +168,7 @@ void traiterreclamation::on_pushButton_2_clicked()
 }
 
 void traiterreclamation::on_pushButton_4_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -180,7 +177,7 @@ void traiterreclamation::on_pushButton_4_clicked()
 
 
 void traiterreclamation::on_pushButton_10_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     int id= ui->comboBox_3->currentText().toInt();
     bool test=tmprec.supprimer(id);
     bool test1=tmprec1.supprimer1(id);
@@ -199,24 +196,19 @@ void traiterreclamation::on_pushButton_10_clicked()
                     QObject::tr("Erreur !.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 }
-void traiterreclamation::sendMail()
-{
 
+
+
+
+
+
+void traiterreclamation::on_pushButton_5_clicked()
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     QString uname="mohamedazizsmati@gmail.com";
     QString passwd="Aziz_28157057@";
     QString server="smtp.gmail.com";
-    QString port="465";
-    Smtp* smtp = new Smtp(uname,passwd,server,port.toUShort());
-    connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
 
-
-    smtp->sendMail(uname, ui->lineEdit_27->text() , "on a traité votre reclamation",ui->lineEdit_29->text());
+    Smtp* smtp = new Smtp(uname, passwd, server,465);
+             if(smtp->sendMail(uname,ui->lineEdit_27->text() , "on a traité bien traité votre reclamation",ui->lineEdit_29->text()))
+             QMessageBox::information(nullptr,QObject::tr("mail"),"e-mail envoyé");
 }
-
-void traiterreclamation::mailSent(QString status)
-{
-    if(status == "Message sent")
-        QMessageBox::information( nullptr, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
-}
-
-

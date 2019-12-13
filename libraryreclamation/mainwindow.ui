@@ -20,10 +20,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>150</y>
-      <width>671</width>
-      <height>391</height>
+      <x>170</x>
+      <y>50</y>
+      <width>801</width>
+      <height>521</height>
      </rect>
     </property>
     <property name="cursor">
@@ -164,12 +164,50 @@ color: rgb(170, 85, 0);</string>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(170, 85, 0);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(170, 85, 0);</string>
+        </property>
         <property name="text">
          <string>fermer</string>
         </property>
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>40</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_time">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>410</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
     </widget>
    </widget>
   </widget>

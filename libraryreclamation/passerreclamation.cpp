@@ -33,7 +33,7 @@ passerreclamation::~passerreclamation()
 }
 
 void passerreclamation::on_pushButton_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -45,7 +45,7 @@ void passerreclamation::on_pushButton_clicked()
 
 
 void passerreclamation::on_pushButton_3_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     cpasserreclamation tmp;
     int id= ui->lineEdit_12->text().toInt();
     QString sujet= ui->lineEdit_2->text();
@@ -82,33 +82,33 @@ void passerreclamation::on_pushButton_3_clicked()
 
 
 void passerreclamation::on_pushButton_12_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_4->setText("A propos de commande");
 
 }
 
 void passerreclamation::on_pushButton_11_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_4->setText("A propos de Produit");
 
 }
 
 void passerreclamation::on_pushButton_14_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_2->setText("Stock de livres fini");
 
 }
 
 
 void passerreclamation::on_pushButton_13_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_2->setText("Retard de commande");
 
 }
 
 
 void passerreclamation::on_pushButton_15_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_2->setText("defaut de produit");
 
 }
@@ -139,7 +139,7 @@ void passerreclamation::on_comboBox_5_currentIndexChanged(const QString &arg1)
 }
 
 void passerreclamation::on_pushButton_4_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     int id= ui->comboBox_5->currentText().toInt();
     QString sujet =ui->lineEdit_3->text();
      QString type=ui->lineEdit->text();
@@ -168,7 +168,7 @@ else
 }
 
 void passerreclamation::on_pushButton_5_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     int id= ui->comboBox_2->currentText().toInt();
 
     bool test=tmprec.supprimer(id);
@@ -191,7 +191,7 @@ void passerreclamation::on_pushButton_5_clicked()
 
 
 void passerreclamation::on_pushButton_6_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
 reclamation *r;
     hide();
     r= new reclamation(this);
@@ -199,7 +199,7 @@ reclamation *r;
 }
 
 void passerreclamation::on_pushButton_31_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -207,7 +207,7 @@ void passerreclamation::on_pushButton_31_clicked()
 }
 
 void passerreclamation::on_pushButton_32_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -215,20 +215,20 @@ void passerreclamation::on_pushButton_32_clicked()
 }
 
 void passerreclamation::on_pushButton_16_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit->setText("A Propos De Commande");
 
 }
 
 void passerreclamation::on_pushButton_17_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit->setText("A Propos De Produit");
 
 }
 
 
 void passerreclamation::on_pushButton_18_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_3->setText("Retard de commande");
 
 }
@@ -236,37 +236,37 @@ void passerreclamation::on_pushButton_18_clicked()
 
 
 void passerreclamation::on_pushButton_19_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_3->setText("fausse commande (la personne , caracteristiques)");
 
 }
 
 void passerreclamation::on_pushButton_20_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_3->setText("defaut de produit");
 
 }
 
 void passerreclamation::on_pushButton_21_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_7->setText("A Propos De Stock ");
 
 }
 
 void passerreclamation::on_pushButton_22_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_7->setText("A propos des Conditions de travail ");
 
 }
 
 void passerreclamation::on_pushButton_23_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_8->setText("Stock de livres fini ");
 
 }
 
 void passerreclamation::on_pushButton_24_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_8->setText("Stock de livres fini");
 
 }
@@ -278,7 +278,7 @@ void passerreclamation::on_pushButton_25_clicked()
 }
 
 void passerreclamation::on_pushButton_8_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     cpasserreclamation tmp;
     int id= ui->lineEdit_18->text().toInt();
     QString sujet= ui->lineEdit_8->text();
@@ -309,32 +309,32 @@ void passerreclamation::on_pushButton_8_clicked()
 }
 
 void passerreclamation::on_pushButton_26_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_9->setText("A propos de Stock");
 
 }
 
 void passerreclamation::on_pushButton_27_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_9->setText("A propos des Conditions de travail ");
 
 }
 
 void passerreclamation::on_pushButton_28_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_10->setText("Stock de livres fini ");
 
 }
 
 
 void passerreclamation::on_pushButton_29_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_10->setText("Salaire D'employé");
 
 }
 
 void passerreclamation::on_pushButton_30_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->lineEdit_10->setText("Autres Conditions de travail pas favorables ");
 
 }
@@ -363,7 +363,7 @@ void passerreclamation::on_comboBox_3_currentIndexChanged(const QString &arg1)
 
 
 void passerreclamation::on_pushButton_33_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     int id= ui->comboBox_3->currentText().toInt();
     QString sujet =ui->lineEdit_10->text();
      QString type=ui->lineEdit_9->text();
@@ -392,7 +392,7 @@ else
 }
 
 void passerreclamation::on_pushButton_10_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     int id= ui->comboBox_4->currentText().toInt();
 
     bool test=tmprec.supprimer(id);
@@ -412,12 +412,12 @@ void passerreclamation::on_pushButton_10_clicked()
 }
 
 void passerreclamation::on_pushButton_9_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
  ui->tablreclamation_2->setModel(tmprec.afficher1());
 }
 
 void passerreclamation::on_pushButton_2_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -425,13 +425,13 @@ void passerreclamation::on_pushButton_2_clicked()
 }
 
 void passerreclamation::on_pushButton_36_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     int id = ui->lineEdit_19->text().toInt();
     ui->tableView->setModel(tmprec.rechercher(id));
 }
 
 void passerreclamation::on_pushButton_34_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -439,7 +439,7 @@ void passerreclamation::on_pushButton_34_clicked()
 }
 
 void passerreclamation::on_pushButton_35_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -447,7 +447,7 @@ void passerreclamation::on_pushButton_35_clicked()
 }
 
 void passerreclamation::on_pushButton_7_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
@@ -455,13 +455,13 @@ void passerreclamation::on_pushButton_7_clicked()
 }
 
 void passerreclamation::on_pushButton_37_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     ui->tabreclamation->setModel(tmprec.afficher());
 
 }
 
 void passerreclamation::on_pushButton_38_clicked()
-{
+{QSound::play("C:/Users/ZIZOU/Desktop/click.wav");
     reclamation *r;
         hide();
         r= new reclamation(this);
